@@ -1,0 +1,56 @@
+#player {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: min-content;
+}
+
+#player > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+#player > input,
+.text-input {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  color: azure;
+  font-size: medium;
+}
+
+.text-input {
+  width: 100px;
+}
+
+#player > div > .text-input:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#player > input {
+  cursor: pointer;
+}
+
+#player > input:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#player > input:active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#player > .deleteBtn {
+  border: 2px solid rgba(255, 62, 62, 0.815);
+  color: rgb(255, 62, 62);
+}
+
+label {
+  font-size: large;
+}
