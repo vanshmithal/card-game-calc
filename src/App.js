@@ -112,19 +112,21 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <h1>Cardgame Points Calculator</h1>
-        <input
-          className='calculateBtn'
-          type='button'
-          value='Calculate'
-          onClick={calculateScore}
-          disabled={checkState}
-        />
-        <input
-          className='addBtn'
-          type='button'
-          value='Add'
-          onClick={addPlayer}
-        />
+        <div>
+          <input
+            className='calculateBtn'
+            type='button'
+            value='Calculate'
+            onClick={calculateScore}
+            disabled={checkState}
+          />
+          <input
+            className='calculateBtn'
+            type='button'
+            value='Add'
+            onClick={addPlayer}
+          />
+        </div>
         <div className='cont'>
           {data.map((d) => {
             return (
