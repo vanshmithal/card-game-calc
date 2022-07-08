@@ -110,7 +110,7 @@ function App() {
 
   return (
     <div className='App'>
-      <header className='App-header'>
+      <header className='App-header' style={{ height: window.innerHeight }}>
         <h1>Cardgame Points Calculator</h1>
         <div>
           <input
