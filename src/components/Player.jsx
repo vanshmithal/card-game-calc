@@ -15,7 +15,7 @@ function Player({ props, deleteFunc, resetFunc, updateFunc }) {
           className='text-input'
           type='text'
           value={props.points}
-          onChange={(e) => updateFunc(props.id, 'points', e.target.value)}
+          onChange={(e) => updateFunc(props.id, 'points', parseInt(e.target.value))}
         />
       </div>
 
@@ -29,7 +29,7 @@ function Player({ props, deleteFunc, resetFunc, updateFunc }) {
           max='15'
           value={props.hand}
           disabled={props.show}
-          onChange={(e) => updateFunc(props.id, 'hand', e.target.value)}
+          onChange={(e) => updateFunc(props.id, 'hand', parseInt(e.target.value))}
         />
       </div>
       <div>
